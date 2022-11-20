@@ -1,0 +1,39 @@
+@import './utils/vars';
+@import './components/header';
+@import './components/hero';
+@import './components/features-wwd';
+@import './components/team-clients';
+@import './components/btn';
+@import './components/footer';
+@import './components/modal-w';
+@import './components/portfolio';
+
+
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    color: $main-font-color;
+    background-color: $bg-color;
+    letter-spacing: 0.03em;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.container {
+    padding: 0 15px;
+    width: 1200px;
+    margin: auto;
+}
+.ul {
+    list-style: none;
+}

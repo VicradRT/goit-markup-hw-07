@@ -1,0 +1,110 @@
+@import '../utils/vars';
+
+.header-portfolio {
+    border-bottom: 1px solid #ECECEC;
+}
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+.list-nav {
+    display: flex;
+    margin-left: 93px;
+    gap: 50px;
+}
+.list-link {
+    padding: 32px 0;
+}
+.list-logo {
+    padding: 25px 0;
+}
+.tel-list {
+    display: flex;
+}
+.logo {
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+.fpart {
+    color: $secondary-font-color;
+}
+.spart {
+    color: #000000;
+}
+.link {
+    text-decoration: none;
+}
+.nav {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $main-font-color;
+        &:hover,
+        &:focus {
+            color: $secondary-font-color;
+        }
+}
+.list-nav-link {
+    position: relative;
+}
+.current {
+    color: $secondary-font-color;
+}
+.list-link::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -170%;
+    width: 100%;
+    height: 4px;
+    background: $secondary-font-color;
+    border-radius: 2px;
+    opacity: 0;
+    transform: scaleX(0.3);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.list-link.current::after,
+.list-link:hover::after,
+.list-link:focus::after {
+    opacity: 1;
+    transform: scaleX(1);
+}
+.tel-mail {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 28px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $color-telmail;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus {
+            color: $secondary-font-color;
+        }
+}
+.mail-icon {
+    display: inline-flex;
+    height: 12px;
+    width: 16px;
+    margin-right: 10px;
+    fill: currentColor;
+}
+.tell-icon {
+    display: inline-flex;
+    height: 16px;
+    width: 10px;
+    margin-right: 10px;
+    fill: currentColor;
+}
